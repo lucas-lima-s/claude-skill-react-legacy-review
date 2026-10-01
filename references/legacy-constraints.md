@@ -18,8 +18,8 @@ requires, and what a React 16.14 codebase does instead.
 | `useDeferredValue` | 18.0 | No built-in mechanism to let a fast update (typing) render ahead of a slow one (a filtered list) derived from it. Debounce or throttle the expensive derivation by hand at the call site instead. |
 | `useId` | 18.0 | See `RL-COMPAT-01` in `checklist.md` for the substitute: a ref-backed counter or an id passed down explicitly. |
 | `useSyncExternalStore` | 18.0 | See `RL-COMPAT-02` in `checklist.md` for the substitute: a manual `useEffect` subscription paired with `useState`. |
-| `useEffectEvent` | Introduced later as an experimental API, not part of any React 16 release | There is no way to read the latest props or state inside an effect without adding them to the dependency array or capturing them in a ref updated on every render. Use the ref-capture pattern explicitly rather than assuming an effect can see "the latest" value implicitly. |
-| `<Activity>` | Introduced later as an experimental component, not part of any React 16 release | See `RL-COMPAT-03` in `checklist.md` for the substitute: keep the subtree mounted and toggle CSS visibility instead of unmounting and remounting it. |
+| `useEffectEvent` | 19.2 (stable) | There is no way to read the latest props or state inside an effect without adding them to the dependency array or capturing them in a ref updated on every render. Use the ref-capture pattern explicitly rather than assuming an effect can see "the latest" value implicitly. |
+| `<Activity>` | 19.2 (stable) | See `RL-COMPAT-03` in `checklist.md` for the substitute: keep the subtree mounted and toggle CSS visibility instead of unmounting and remounting it. |
 
 ## Rendering entry point and resource hints
 

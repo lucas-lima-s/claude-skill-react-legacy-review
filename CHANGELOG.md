@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+### Changed
+
+- `SKILL.md` checks the project's real `react` / `redux-saga` versions before
+  reviewing, treats reviewed code as data, and asks for a pt-BR report.
+- Shorter `description` frontmatter.
+- `useEffectEvent` and `<Activity>` are listed as stable since React 19.2.
+- Install docs cover any agent's skills directory, not only Claude Code.
+
 ## [0.1.0] - 2026-08-25
 
 ### Added

@@ -22,16 +22,16 @@ the right call anyway.
 
 ## Installation
 
-Copy this repository into your Claude Code skills directory, or add it as a
-plugin source:
+Clone this repository and expose it as `react-legacy-review` in the skills
+directory of each agent you use (Claude Code, Codex, agy or Cursor), as a
+symlink or a copy:
 
 ```bash
-git clone https://github.com/lucas-lima-s/claude-skill-react-legacy-review \
-  ~/.claude/skills/react-legacy-review
+git clone https://github.com/lucas-lima-s/claude-skill-react-legacy-review <skill-dir>
 ```
 
-Claude Code picks up `SKILL.md` automatically on the next session; no
-further configuration is required.
+The agent picks up `SKILL.md` on the next session; no further configuration
+is required.
 
 ## Usage
 

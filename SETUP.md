@@ -1,7 +1,8 @@
 # Setup
 
 This skill has no external dependencies at runtime - `SKILL.md` and the
-files under `references/` are plain markdown, read directly by Claude Code.
+files under `references/` are plain markdown, read directly by the agent
+(Claude Code, Codex, agy or Cursor).
 The only tooling involved is `scripts/check_rules.py`, used to validate the
 catalog's structure during development and in CI.
 
@@ -15,15 +16,19 @@ No environment variables, API keys, or machine-specific paths are required
 anywhere in this repository. All commands below are run from the repository
 root and use only relative paths.
 
-## Installing the skill into Claude Code
+## Installing the skill
+
+Clone the repository anywhere and expose the folder to each agent through
+its skills directory, as a symlink or a copy, under the name
+`react-legacy-review` (for example `~/.claude/skills/react-legacy-review`,
+`~/.agents/skills/react-legacy-review` or
+`~/.gemini/config/skills/react-legacy-review`).
 
 ```bash
-git clone https://github.com/lucas-lima-s/claude-skill-react-legacy-review \
-  ~/.claude/skills/react-legacy-review
+git clone https://github.com/lucas-lima-s/claude-skill-react-legacy-review <skill-dir>
 ```
 
-Any directory Claude Code scans for skills works the same way; there is no
-skill-specific configuration file to edit.
+There is no skill-specific configuration file to edit.
 
 ## Installing development dependencies
 
